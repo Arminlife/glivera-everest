@@ -1,0 +1,43 @@
+mixin news_card(data)
+  .news_card(class='news_card--size_columns_' + data.columns + ' news_card--size_rows_' + data.rows + ' news_card--style_' + data.style)
+    .news_card__inner 
+      if data.image
+        if data.videoLink 
+          a.video_popup(href=data.videoLink data-fancybox)
+            span.icon_video 
+              img(src="images/icon-video.png", alt="") 
+            +picture({
+              img: data.image,
+              class: 'news_card__image',
+              img_class: '',
+            })
+
+        else
+          +picture({
+            img: data.image,
+            class: 'news_card__image',
+            img_class: '',
+          })
+      if data.style == 'video'    
+        a.news_card__content(href=data.link)
+          .news_card__title #[span !{data.title}]
+          span.news_card__author #{data.author}
+          span.news_card__text_label New
+          span.news_card__video_btn 
+            | Смотреть
+            img(src="images/icon-play.png", alt="")      
+      else      
+        .news_card__content    
+          .news_card__top
+            a.news_card__category(href=data.category.link class='news_card__category--color_style' + data.category.style)= data.category.title
+            if data.digest
+              .news_card__label 
+                +icon('digest', 'icon--size_mod')
+            if data.author
+              span.news_card__author Автор: #{data.author}
+          a.news_card__title(href=data.link) !{data.title}
+          if data.description 
+            .news_card__description= data.description
+          .news_card__bottom 
+            span.news_card__date= data.date
+            span.news_card__read-time= data.time

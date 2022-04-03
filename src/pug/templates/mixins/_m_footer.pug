@@ -1,0 +1,70 @@
+mixin footer
+	footer.footer
+		.section
+			.section_in
+				.footer__wrapper
+					.footer__column 
+						a.footer__logo(href="#")
+							img(src="images/logo_footer.svg", alt="") 
+						a.footer_list__link(href="#") Платформа AI
+						ul.list_icons 
+							li.list_icons__item
+								a.list_icons__link(href='#')
+									+icon('fb', 'icon--size_mod')
+							li.list_icons__item
+								a.list_icons__link(href='#')
+									+icon('rss', 'icon--size_mod')
+							li.list_icons__item
+								a.list_icons__link(href='#')
+									+icon('twitter', 'icon--size_mod')
+							li.list_icons__item
+								a.list_icons__link(href='#')
+									+icon('yt', 'icon--size_mod')
+						.footer__copyright 
+							span.copyright_icon ©
+							span 2020 Everest. #[br] ALL RIGHTS RESERVED
+					.footer__column 
+						ul.footer_list 
+							li.footer_list__item #[a.footer_list__link(href="#") Кто мы]
+							li.footer_list__item #[a.footer_list__link(href="#") Что мы делаем]
+							li.footer_list__item #[a.footer_list__link(href="#") Работы]
+							li.footer_list__item #[a.footer_list__link(href="#") Компетенции]
+							li.footer_list__item #[a.footer_list__link(href="#") Команда]
+							li.footer_list__item #[a.footer_list__link(href="#") Новости]
+							li.footer_list__item #[a.footer_list__link(href="#") Партнеры]
+							li.footer_list__item #[a.footer_list__link(href="#") Контакты]
+					.footer__column 
+						ul.footer_list 
+							li.footer_list__item #[a.footer_list__link(href="#") Аналитика]
+							li.footer_list__item #[a.footer_list__link(href="#") Решения]
+								ul.footer_list__submenu
+									li.footer_list__submenu_item #[a.footer_list__link(href="#") Банки]
+									li.footer_list__submenu_item #[a.footer_list__link(href="#") Страхование]
+									li.footer_list__submenu_item #[a.footer_list__link(href="#") Здравоохранение]
+									li.footer_list__submenu_item #[a.footer_list__link(href="#") Транспорт и логистика]
+									li.footer_list__submenu_item #[a.footer_list__link(href="#") Государственный сектор]
+									li.footer_list__submenu_item #[a.footer_list__link(href="#") Ритейл и eCommerce]
+									li.footer_list__submenu_item #[a.footer_list__link(href="#") Телекомуникации]
+					.footer__column 
+						.footer_list__link О нас
+						.footer_description 
+							p
+								| EVEREST - опытный интегратор digital-технологий, продуктов и сервисов 
+								| для цифровой трансформации бизнеса, корпоративного и государственного секторов.
+							p
+								| Разрабатывает и внедряет решения на базе AI, используя методы Data Data и 
+								| ML для совершенствования и автоматизации бизнес-процессов клиентов.
+							p
+								| Всегда оперирует тенденциями цифрового мира и концентрирует свои усилия на 
+								| уникальности и инновационности методов в работе с каждым клиентом над созданием и адаптацией digital-идей и концепций.
+						form.footer_form(action="#")
+							.footer_form__title Будьте в курсе лучших digital-решений для вашего бизнеса
+							.footer_form__inner
+								+form_input({
+									type: 'email',
+									label: '',
+									placeholder: 'Email',
+									value: '',
+									id: 'input_1',
+								})
+								button.btn(type='submit') Подписаться

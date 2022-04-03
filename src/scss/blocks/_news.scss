@@ -1,0 +1,11 @@
+.news_wrapper {
+	display: grid;
+	gap: 2rem;
+	margin-bottom: 6rem;
+	@include bp($point_1, min){
+		grid: auto-flow/repeat(auto-fill, minmax(21.6rem, 1fr));
+	}
+	@include bp($point_1){
+		grid: auto-flow dense/repeat(auto-fill, minmax(21.6rem, 1fr));
+	}
+}

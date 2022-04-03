@@ -1,0 +1,41 @@
+mixin header
+	header.header
+		.section_in
+			.header_main_row
+				h1.logo_wrap.header_mod
+					a(href="#").logo_text.header_mod
+						img(src="images/logo.svg", alt="")
+				.menu_trigger.menuTrigger
+					span.menu_trigger_decor
+				nav.header_menu
+					+menu({
+						gl_class: 'header_menu',
+						items: [
+							{title: 'О нас', url: '#', active: true},
+							{title: 'Решения', url: '#', active: false},
+							{title: 'Аналитика', url: '#', active: false},
+							{title: 'Партнеры', url: '#', active: false},
+							{title: 'Контакты', url: '#', active: false},
+							{title: 'Подписка', url: '#', active: false}
+						]
+					})
+					ul.list_icons 
+						li.list_icons__item
+							a.list_icons__link(href='#')
+								+icon('fb', 'icon--size_mod')
+						li.list_icons__item
+							a.list_icons__link(href='#')
+								+icon('rss', 'icon--size_mod')
+						li.list_icons__item
+							a.list_icons__link(href='#')
+								+icon('twitter', 'icon--size_mod')
+						li.list_icons__item
+							a.list_icons__link(href='#')
+								+icon('yt', 'icon--size_mod')
+						li.list_icons__item
+							a.list_icons__link(href='#')
+								+icon('search', 'icon--size_mod')
+					ul.header_lang 
+						li.header_lang__item.header_lang__item--active UA
+						li.header_lang__item RU
+				
