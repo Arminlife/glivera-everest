@@ -1,16 +1,37 @@
-.list_icons{
-	display: flex;
-	align-items: center;
+.list_icons {
+  display: flex;
+  align-items: center;
+
+  margin-right: 2.4rem;
 }
-.list_icons__item{
-	width: 2.2rem;
-	height: 2rem;
-	margin-right: 2.4rem;
+
+.list_icons__item {
+  width: 2.2rem;
+  height: 2rem;
+
+  margin-right: 2.4rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.list_icons__link{
-	color: #777;
-	transition: color 0.3s linear;
-	&:hover{
-		color: #000;
+
+.list_icons__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+  color: $gray;
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: #000;
+  }
+	.footer &{
+		transition: all 0.3s linear;
+		&:hover{
+			color: #fff;
+			opacity: 0.7;
+		}
 	}
 }

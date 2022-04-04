@@ -6,7 +6,8 @@ mixin footer
 					.footer__column 
 						a.footer__logo(href="#")
 							img(src="images/logo_footer.svg", alt="") 
-						a.footer_list__link(href="#") Платформа AI
+						.footer__single-link
+							a.footer_list__link(href="#") Платформа AI
 						ul.list_icons 
 							li.list_icons__item
 								a.list_icons__link(href='#')
@@ -46,7 +47,8 @@ mixin footer
 									li.footer_list__submenu_item #[a.footer_list__link(href="#") Ритейл и eCommerce]
 									li.footer_list__submenu_item #[a.footer_list__link(href="#") Телекомуникации]
 					.footer__column 
-						.footer_list__link О нас
+						.footer__single-link
+							.footer_list__link О нас
 						.footer_description 
 							p
 								| EVEREST - опытный интегратор digital-технологий, продуктов и сервисов 

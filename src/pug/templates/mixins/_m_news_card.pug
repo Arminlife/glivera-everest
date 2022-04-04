@@ -5,22 +5,22 @@ mixin news_card(data)
         if data.videoLink 
           a.video_popup(href=data.videoLink data-fancybox)
             span.icon_video 
-              img(src="images/icon-video.png", alt="") 
+              +icon('play', 'icon--size_mod')
             +picture({
               img: data.image,
-              class: 'news_card__image',
-              img_class: '',
+              class: 'news_card__picture',
+              img_class: 'news_card__img',
             })
 
         else
           +picture({
             img: data.image,
-            class: 'news_card__image',
-            img_class: '',
+            class: 'news_card__picture',
+            img_class: 'news_card__img',
           })
       if data.style == 'video'    
         a.news_card__content(href=data.link)
-          .news_card__title #[span !{data.title}]
+          .news_card__title #[span!= data.title]
           span.news_card__author #{data.author}
           span.news_card__text_label New
           span.news_card__video_btn 

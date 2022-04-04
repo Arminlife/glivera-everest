@@ -31,8 +31,7 @@
   <body>
     <header class="header">
       <div class="section_in">
-        <div class="header_main_row">
-          <h1 class="logo_wrap header_mod"><a class="logo_text header_mod" href="#"><img src="images/logo.svg" alt=""></a></h1>
+        <div class="header_main_row"><a class="header_logo" href="#"><img class="header_logo__img" src="images/logo.svg" alt=""></a>
           <div class="menu_trigger menuTrigger"><span class="menu_trigger_decor"></span></div>
           <nav class="header_menu">
             <ul class="header_menu__list ">
@@ -80,9 +79,9 @@
             <div class="news_wrapper">
               <div class="news_card news_card--size_columns_3 news_card--size_rows_2 news_card--style_main">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/news1.jpg.webp" type="image/webp">
-                    <source srcset="images/news1.jpg" type="image/jpg"><img class="cover_img" src="images/news1.jpg" alt="">
+                    <source srcset="images/news1.jpg" type="image/jpg"><img class="news_card__img" src="images/news1.jpg" alt="">
                   </picture>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style3" href="#">Здравоохранение</a><span class="news_card__author">Автор: Владимир Мищенко</span>
@@ -149,9 +148,9 @@
               </div>
               <div class="news_card news_card--size_columns_2 news_card--size_rows_1 news_card--style_video">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/video-preview.jpg.webp" type="image/webp">
-                    <source srcset="images/video-preview.jpg" type="image/jpg"><img class="cover_img" src="images/video-preview.jpg" alt="">
+                    <source srcset="images/video-preview.jpg" type="image/jpg"><img class="news_card__img" src="images/video-preview.jpg" alt="">
                   </picture><a class="news_card__content" href="#">
                     <div class="news_card__title"><span><span>Digital <br> transformation</span> <br>по-украински</span></div><span class="news_card__author">Юрий Чубатюк</span><span class="news_card__text_label">New</span><span class="news_card__video_btn">
                        Смотреть<img src="images/icon-play.png" alt=""></span></a>
@@ -196,10 +195,13 @@
                 </div>
               </div>
               <div class="news_card news_card--size_columns_2 news_card--size_rows_1 news_card--style_two_column">
-                <div class="news_card__inner"> <a class="video_popup" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-fancybox><span class="icon_video"> <img src="images/icon-video.png" alt=""></span>
-                    <picture class="news_card__image">
+                <div class="news_card__inner"> <a class="video_popup" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-fancybox><span class="icon_video"> 
+                      <svg class="icon icon_play icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#play"></use>
+                      </svg></span>
+                    <picture class="news_card__picture">
                       <source srcset="images/coke.jpg.webp" type="image/webp">
-                      <source srcset="images/coke.jpg" type="image/jpg"><img class="cover_img" src="images/coke.jpg" alt="">
+                      <source srcset="images/coke.jpg" type="image/jpg"><img class="news_card__img" src="images/coke.jpg" alt="">
                     </picture></a>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style7" href="#">Ритейл и eCommerce</a><span class="news_card__author">Автор: Пётр Ванькин</span>
@@ -238,9 +240,9 @@
               </div>
               <div class="news_card news_card--size_columns_2 news_card--size_rows_1 news_card--style_two_column">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/news2.jpg.webp" type="image/webp">
-                    <source srcset="images/news2.jpg" type="image/jpg"><img class="cover_img" src="images/news2.jpg" alt="">
+                    <source srcset="images/news2.jpg" type="image/jpg"><img class="news_card__img" src="images/news2.jpg" alt="">
                   </picture>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style1" href="#">Государственный сектор</a><span class="news_card__author">Автор: Пётр Ванькин</span>
@@ -270,9 +272,9 @@
               </div>
               <div class="news_card news_card--size_columns_2 news_card--size_rows_1 news_card--style_two_column">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/news3.jpg.webp" type="image/webp">
-                    <source srcset="images/news3.jpg" type="image/jpg"><img class="cover_img" src="images/news3.jpg" alt="">
+                    <source srcset="images/news3.jpg" type="image/jpg"><img class="news_card__img" src="images/news3.jpg" alt="">
                   </picture>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style6" href="#">Банки</a><span class="news_card__author">Автор: Денис Полищук</span>
@@ -297,9 +299,9 @@
               </div>
               <div class="news_card news_card--size_columns_1 news_card--size_rows_2 news_card--style_default">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/news2.jpg.webp" type="image/webp">
-                    <source srcset="images/news2.jpg" type="image/jpg"><img class="cover_img" src="images/news2.jpg" alt="">
+                    <source srcset="images/news2.jpg" type="image/jpg"><img class="news_card__img" src="images/news2.jpg" alt="">
                   </picture>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style1" href="#">Государственный сектор</a><span class="news_card__author">Автор:  Артём Голоскевич</span>
@@ -310,9 +312,9 @@
               </div>
               <div class="news_card news_card--size_columns_1 news_card--size_rows_2 news_card--style_default">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/news3.jpg.webp" type="image/webp">
-                    <source srcset="images/news3.jpg" type="image/jpg"><img class="cover_img" src="images/news3.jpg" alt="">
+                    <source srcset="images/news3.jpg" type="image/jpg"><img class="news_card__img" src="images/news3.jpg" alt="">
                   </picture>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style6" href="#">Банки</a><span class="news_card__author">Автор: Пётр Ванькин</span>
@@ -323,9 +325,9 @@
               </div>
               <div class="news_card news_card--size_columns_1 news_card--size_rows_2 news_card--style_default">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/news4.jpg.webp" type="image/webp">
-                    <source srcset="images/news4.jpg" type="image/jpg"><img class="cover_img" src="images/news4.jpg" alt="">
+                    <source srcset="images/news4.jpg" type="image/jpg"><img class="news_card__img" src="images/news4.jpg" alt="">
                   </picture>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style5" href="#">Транспорт и логистика </a><span class="news_card__author">Автор: Владимир Мищенко</span>
@@ -360,9 +362,9 @@
               </div>
               <div class="news_card news_card--size_columns_2 news_card--size_rows_2 news_card--style_main">
                 <div class="news_card__inner"> 
-                  <picture class="news_card__image">
+                  <picture class="news_card__picture">
                     <source srcset="images/news5.jpg.webp" type="image/webp">
-                    <source srcset="images/news5.jpg" type="image/jpg"><img class="cover_img" src="images/news5.jpg" alt="">
+                    <source srcset="images/news5.jpg" type="image/jpg"><img class="news_card__img" src="images/news5.jpg" alt="">
                   </picture>
                   <div class="news_card__content">   
                     <div class="news_card__top"><a class="news_card__category news_card__category--color_style1" href="#">Государственный сектор</a><span class="news_card__author">Автор: Артём Голоскевич</span>
@@ -470,7 +472,8 @@
         <div class="section">
           <div class="section_in">
             <div class="footer__wrapper">
-              <div class="footer__column"> <a class="footer__logo" href="#"><img src="images/logo_footer.svg" alt=""></a><a class="footer_list__link" href="#">Платформа AI</a>
+              <div class="footer__column"> <a class="footer__logo" href="#"><img src="images/logo_footer.svg" alt=""></a>
+                <div class="footer__single-link"><a class="footer_list__link" href="#">Платформа AI</a></div>
                 <ul class="list_icons"> 
                   <li class="list_icons__item"><a class="list_icons__link" href="#">
                       <svg class="icon icon_fb icon--size_mod">
@@ -520,7 +523,9 @@
                 </ul>
               </div>
               <div class="footer__column"> 
-                <div class="footer_list__link">О нас</div>
+                <div class="footer__single-link">
+                  <div class="footer_list__link">О нас</div>
+                </div>
                 <div class="footer_description"> 
                   <p>
                     EVEREST - опытный интегратор digital-технологий, продуктов и сервисов 
